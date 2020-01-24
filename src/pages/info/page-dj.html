@@ -1,0 +1,20 @@
+---
+layout: default
+title: Dulcimer Jambalaya Information
+pageactive: dj
+---
+<article class="message">
+  <div class="columns">
+    <div class="column is-10 is-offset-1">
+      <div class="message-body is-size-5">
+        Dulcimer Jambalaya is a blog created to share my knowledge of playing and exploring the dulcimer for a long time. For those who want to find out more about the dulcimer there is dulcimer history, culture, and different kinds of dulcimers. For those who want to play the dulcimer there is dulcimer tunings and guidance on learning to play. There are songs and tablatures for beginners and those more advanced. For those who want to hear dulcimers played or to participate there is information on some of the Louisiana dulcimer concerts, fetes and other events.
+        If any of this sounds good select a topic and you will be transmitted to dulcimerjambalaya.org to a page listing the blog posts on that topic.
+      </div>
+    </div>
+  </div>
+</article>
+<section class="taxonomy-list has-text-centered">
+{{#each imagetagsdj}}
+  {{{imagetags pagelink "../assets/img/dj/" imagefile pagetext @index ../imagetagsdj.length}}}
+{{/each}}
+</section>

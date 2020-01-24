@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&display=swap");
+
+// Update Bulma's global variables
+$family-sans-serif: "Bree Serif", serif;
+$family-sans-serif: "Fira Sans", sans-serif;
+// dark-green
+$primary: #185105;
+
+// Update some of Bulma's component variables
+$body-background-color: #d2a86e;
+
+// All of bulma
+// @import "../../node_modules/bulma/bulma.sass";
+
+// Only the things you need
+@import "../../node_modules/bulma/sass/utilities/_all";
+@import "../../node_modules/bulma/sass/base/_all";
+// @import "../../node_modules/bulma/sass/elements/_all";
+@import "../../node_modules/bulma/sass/elements/box.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/content.sass";
+@import "../../node_modules/bulma/sass/elements/icon.sass";
+@import "../../node_modules/bulma/sass/elements/image.sass";
+// @import "../../node_modules/bulma/sass/elements/notification.sass";
+// @import "../../node_modules/bulma/sass/elements/progress.sass";
+@import "../../node_modules/bulma/sass/elements/table.sass";
+// @import "../../node_modules/bulma/sass/elements/tag.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/elements/other.sass";
+@import "../../node_modules/bulma/sass/form/_all";
+@import "../../node_modules/bulma/sass/components/_all";
+@import "../../node_modules/bulma/sass/grid/_all";
+@import "../../node_modules/bulma/sass/layout/_all";
+
+/* Custom styles */
+
+// brown-red
+$color-secondary: #5f2906;
+// blue-green
+$color-tertiary: #4b8a7e;
+$text-color-light: #ebebeb;
+$link-color-light: mix(white, blue, 75%);
+$background-color-very-light: mix(white, #185105, 82%);
+
+$font-family-serif: "Bree Serif", serif;
+
+/*! Based on: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print {
+  *,
+  *:before,
+  *:after {
+    color: #000; // Black prints faster: h5bp.com/s
+    text-shadow: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  // Don't show links
+  a[href]:after {
+    content: none;
+  }
+
+  // Now only show external links
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; // h5bp.com/t
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  // Bulma components
+  .navbar {
+    display: none;
+  }
+
+  .table {
+    border-collapse: collapse !important;
+
+    td,
+    th {
+      background-color: #fff !important;
+    }
+  }
+
+  .table .is-bordered {
+    th,
+    td {
+      border: 1px solid #ddd !important;
+    }
+  }
+}
+// end media prints
+
+h2.has-text-secondary {
+  color: $color-secondary;
+}
+a.has-text-secondary:hover,
+a.has-text-secondary:focus {
+  color: darken($color-secondary, 10%);
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-vertical-center {
+  align-items: center;
+}
+
+body {
+  background: url(../img/Melamine-wood-003.jpg) repeat #d2a86e;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-family: $font-family-serif;
+}
+
+h3 {
+  font-family: $font-family-serif;
+}
+
+.nonav h1 {
+  font-size: 2em;
+}
+
+.navbar.is-primary .navbar-start > .navbar-item,
+.navbar.is-primary .navbar-start .navbar-link,
+.navbar.is-primary .navbar-end > .navbar-item,
+.navbar.is-primary .navbar-end .navbar-link {
+  color: $text-color-light;
+}
+
+.button.is-primary {
+  color: $text-color-light;
+}
+
+@media screen and (max-width: $desktop) {
+  .navbar-menu {
+    background-color: $primary;
+    color: white;
+  }
+  .navbar-menu a {
+    color: $link-color-light;
+  }
+  .navbar-menu a.navbar-item:focus,
+  .navbar-menu a.navbar-item:hover {
+    background-color: darken($primary, 5%);
+    color: $link-color-light;
+  }
+  .navbar-menu a.navbar-item.is-active {
+    background-color: darken($primary, 5%);
+    color: $link-color-light;
+  }
+}
+
+.main-content {
+  background-color: white;
+}
+
+.container-header-home {
+  position: relative;
+  idth: 100%;
+}
+
+.container-header-home .image-overlay {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container-header-home .text-overlay-centered {
+  text-transform: uppercase;
+  font-family: $font-family-serif;
+  color: #d2a86e;
+  font-size: 60px;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+@include desktop-only {
+  .container-header-home .text-overlay-centered {
+    font-size: 50px;
+    line-height: 1.2em;
+  }
+}
+
+@include tablet-only {
+  .container-header-home .text-overlay-centered {
+    font-size: 40px;
+    line-height: 1.2em;
+    padding: 10px;
+  }
+}
+
+@include mobile {
+  .container-header-home .text-overlay-centered {
+    font-size: 40px;
+    line-height: 1em;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media print {
+  .container-header-home .text-overlay-centered {
+    font-size: 40px;
+    line-height: 1.2em;
+    padding: 10px;
+    background: $white;
+    text-shadow: none;
+  }
+}
+
+.page-header h1 {
+  color: $color-secondary;
+  padding-bottom: 10px;
+}
+
+.links-list li {
+  list-style: none;
+}
+
+.message {
+  background-color: $background-color-very-light;
+}
+
+.card-header-title a {
+  font-size: 1.66em;
+  color: $color-secondary;
+}
+
+/* image tags */
+
+.taxonomy-list {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.taxonomy-list .item {
+  position: relative;
+  background: #fff;
+  height: 100%;
+  margin-bottom: 2%;
+  overflow: hidden;
+  box-shadow: 0 0 5px #dedede;
+  border: 1px solid #fff;
+}
+
+.taxonomy-list .item-content {
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  word-wrap: break-word;
+}
+
+.taxonomy-list .item-content header {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.taxonomy-list .item-content p {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+}
+
+.taxonomy-list .item-content p:hover {
+  background: url(../img/trans2.png);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.taxonomy-list .item-content p a {
+  display: block;
+  padding: 12px 15px 17px 15px;
+  text-decoration: none;
+}
+
+.taxonomy-list .item-content .item-caption {
+  border-bottom: 0;
+  font-size: 1.3em;
+}
+
+.taxonomy-list .item-content header a {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+
+@media print {
+  .taxonomy-list .item-content header a {
+    font-size: 16px;
+  }
+}
+
+.taxonomy-list .item img {
+  // position: absolute;
+  height: auto;
+  width: auto;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+}
+
+.footer {
+  background-color: $color-tertiary;
+  color: $text-color-light;
+  // height: 400px;
+}
+
+.footer a {
+  color: $link-color-light;
+}

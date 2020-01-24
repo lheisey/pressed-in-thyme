@@ -1,0 +1,32 @@
+  <!-- START NAV -->
+  <nav class="navbar is-primary" data-sticky>
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{root}}index.html">
+          <img src="{{root}}assets/img/logo-60.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item{{#ifequal pageactive 'home'}} is-active{{/ifequal}}" href="{{root}}index.html">
+            Home
+          </a>
+          <a class="navbar-item{{#ifpage 'page-dj'}} is-active{{/ifpage}}" href="{{root}}info/page-dj.html">
+            Dulcimer Jambalaya
+          </a>
+          <a class="navbar-item{{#ifpage 'page-bg'}} is-active{{/ifpage}}" href="{{root}}info/page-bg.html">
+            Beyond Gumbo
+          </a>
+          <a class="navbar-item{{#ifpage 'page-ppv'}} is-active{{/ifpage}}" href="{{root}}info/page-ppv.html">
+            Picturesque Photo Views
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAV -->

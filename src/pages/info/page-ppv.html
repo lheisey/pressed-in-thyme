@@ -1,0 +1,20 @@
+---
+layout: default
+title: Picturesque Photo Views Information
+pageactive: ppv
+---
+<article class="message">
+  <div class="columns">
+    <div class="column is-10 is-offset-1">
+      <div class="message-body is-size-5">
+         Picturesque Photo Views is a blog created to share interesting and picturesque pictures taken by our family. Those taking a journey through our blog posts will find scenic landscapes both near and far. You will come across gardens filled with beautiful flowers, grand trees, and displays of unique plants. If you look closely you might spot some animals like deer, birds, or even an alligator or rattlesnake. Travel back in time to see how people lived in the recent past. Go farther back to see geological features formed thousands or even millions of years ago. Finally enjoy some of the creative and sometimes a little strange costumes at conventions and parades.
+        If you want to see more of any of this select a topic and you will be transported to picturesquephotoviews.com to a page listing the blog posts on that topic.
+      </div>
+    </div>
+  </div>
+</article>
+<section class="taxonomy-list has-text-centered">
+{{#each imagetagsppv}}
+  {{{imagetags pagelink "../assets/img/ppv/" imagefile pagetext @index ../imagetagsppv.length}}}
+{{/each}}
+</section>

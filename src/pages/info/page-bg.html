@@ -1,0 +1,21 @@
+---
+layout: default
+title: Beyond Gumbo Information
+pageactive: bg
+---
+<article class="message">
+  <div class="columns">
+    <div class="column is-10 is-offset-1">
+      <div class="message-body is-size-5">
+        Beyond Gumbo is a blog created to share my culinary experiences. Start with a recipe. Add a cup of healthy cooking information. Pour in a heaping tablespoon of Louisiana culture. Stir in a dash of nutrition topics. Throw in a pinch of things
+        found during travels. Blend in an ounce of cooking techniques. Add a drop of favorite family ingredients. Mix with a favorite kitchen gadget. Layer with urban garden growing know-how. Finally coat generously with pictures to illustrate all.
+        Voila, the result is the topics covered by the blog. If any of them wets your appetite for more select a topic and you will be taken to beyondgumbo.com to a page listing the blog posts on that topic.
+      </div>
+    </div>
+  </div>
+</article>
+<section class="taxonomy-list has-text-centered">
+  {{#each imagetagsbg}}
+    {{{imagetags pagelink "../assets/img/bg/" imagefile pagetext @index../imagetagsbg.length}}}
+  {{/each}}
+</section>
