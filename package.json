@@ -23,7 +23,7 @@
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.4",
     "browser-sync": "^2.10.0",
-    "bulma": "^0.7.5",
+    "bulma": "^0.8.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.3.1",
