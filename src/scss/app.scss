@@ -5,8 +5,8 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&display=swap");
 
 // Update Bulma's global variables
-$family-sans-serif: "Bree Serif", serif;
 $family-sans-serif: "Fira Sans", sans-serif;
+$family-secondary: "Bree Serif", serif;
 // dark-green
 $primary: #185105;
 
@@ -46,8 +46,6 @@ $color-tertiary: #4b8a7e;
 $text-color-light: #ebebeb;
 $link-color-light: mix(white, blue, 75%);
 $background-color-very-light: mix(white, #185105, 82%);
-
-$font-family-serif: "Bree Serif", serif;
 
 /*! Based on: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -152,11 +150,11 @@ body {
 h1,
 h2 {
   text-transform: uppercase;
-  font-family: $font-family-serif;
+  font-family: $family-secondary;
 }
 
 h3 {
-  font-family: $font-family-serif;
+  font-family: $family-secondary;
 }
 
 .nonav h1 {
@@ -210,7 +208,7 @@ h3 {
 
 .container-header-home .text-overlay-centered {
   text-transform: uppercase;
-  font-family: $font-family-serif;
+  font-family: $family-secondary;
   color: #d2a86e;
   font-size: 60px;
   line-height: 1.5em;
