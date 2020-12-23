@@ -16,8 +16,9 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   </head>
 <body>
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 {{> narbarprimary}}
-  <div class="container main-content">
+  <div id="content" class="container main-content">
 {{#ifequal pageactive 'home'}}
 {{> headerhome}}
 {{else}}
