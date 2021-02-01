@@ -15,15 +15,17 @@
   ],
   "author": "Loren Heisey",
   "license": "BSD-3-Clause",
+  "dependencies": {
+    "@vizuaalog/bulmajs": "^0.10.0",
+    "bulma": "^0.8.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
-    "@vizuaalog/bulmajs": "^0.10.0",
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.4",
     "browser-sync": "^2.10.0",
-    "bulma": "^0.8.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.3.1",
@@ -51,6 +53,5 @@
   "bugs": {
     "url": "https://github.com/lheisey/pressed-in-thyme/issues"
   },
-  "private": true,
-  "dependencies": {}
+  "private": true
 }
