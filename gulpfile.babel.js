@@ -14,6 +14,9 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import rename        from 'gulp-rename';
 import autoprefixer  from 'autoprefixer';
+import nodeSass from 'node-sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass( nodeSass );
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -96,10 +99,10 @@ function styles() {
     ].filter(Boolean);
     return gulp.src(SRCPATH.css)
         .pipe($.sourcemaps.init())
-        .pipe($.sass({
+        .pipe(sass({
             includePaths: SRCPATH.sass
         })
-            .on('error', $.sass.logError))
+            .on('error', sass.logError))
         .pipe($.postcss(postCssPlugins))
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest(APPPATH.css))
