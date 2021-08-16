@@ -47,7 +47,7 @@ const APPPATH = {
 
 // Build the destination folder by running all of the below tasks
 gulp.task('build',
-    gulp.series(gulp.parallel(pages, javascript, images, copy, sass), cssmin, javascriptmin));
+    gulp.series(gulp.parallel(pages, javascript, images, copy, styles), cssmin, javascriptmin));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -90,7 +90,7 @@ function resetPages(done) {
 }
 
 // Compile Sass into CSS and generate sourcemaps
-function sass() {
+function styles() {
     const postCssPlugins = [
         autoprefixer(),
     ].filter(Boolean);
@@ -178,7 +178,7 @@ function watch() {
     gulp.watch(SRCPATH.root + '{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
     gulp.watch(SRCPATH.root + 'data/**/*.{js,json,yml}').on('all', gulp.series(resetPages, pages, browser.reload));
     gulp.watch(SRCPATH.root + 'helpers/**/*.js').on('all', gulp.series(resetPages, pages, browser.reload));
-    gulp.watch(SRCPATH.root + 'scss/**/*.scss').on('all', sass);
+    gulp.watch(SRCPATH.root + 'scss/**/*.scss').on('all', styles);
     gulp.watch(SRCPATH.root + 'js/**/*.js').on('all', gulp.series(javascript, browser.reload));
     gulp.watch(SRCPATH.root + 'img/**/*').on('all', gulp.series(images, browser.reload));
 }
