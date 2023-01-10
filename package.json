@@ -20,7 +20,7 @@
   "author": "Loren Heisey",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@vizuaalog/bulmajs": "^0.12.1",
+    "@vizuaalog/bulmajs": "^0.12.2",
     "bulma": "^0.9.4"
   },
   "devDependencies": {
