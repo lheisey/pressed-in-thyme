@@ -24,12 +24,12 @@
     "bulma": "^0.9.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
-    "autoprefixer": "^10.4.13",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/register": "^7.22.15",
+    "autoprefixer": "^10.4.16",
     "babel-loader": "^8.3.0",
-    "browser-sync": "^2.27.10",
+    "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -45,12 +45,12 @@
     "gulp-uglify": "^3.0.2",
     "node-sass": "^7.0.3",
     "panini": "^1.7.2",
-    "postcss": "^8.4.19",
+    "postcss": "^8.4.30",
     "rimraf": "^3.0.2",
     "vinyl-named": "^1.1.0",
-    "webpack": "^5.75.0",
+    "webpack": "^5.88.2",
     "webpack-stream": "^6.1.2",
-    "yargs": "^17.6.2"
+    "yargs": "^17.7.2"
   },
   "bugs": {
     "url": "https://github.com/lheisey/pressed-in-thyme/issues"
