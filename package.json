@@ -43,7 +43,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "panini": "^1.7.2",
     "postcss": "^8.4.36",
     "rimraf": "^3.0.2",
