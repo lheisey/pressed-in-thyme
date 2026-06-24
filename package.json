@@ -24,10 +24,10 @@
     "bulma": "^0.9.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.6",
-    "@babel/preset-env": "^7.28.6",
-    "@babel/register": "^7.28.6",
-    "autoprefixer": "^10.4.24",
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/register": "^7.29.7",
+    "autoprefixer": "^10.5.2",
     "babel-loader": "^8.4.1",
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
@@ -48,9 +48,9 @@
     "postcss": "^8.5.6",
     "rimraf": "^3.0.2",
     "vinyl-named": "^1.1.0",
-    "webpack": "^5.104.1",
+    "webpack": "^5.107.2",
     "webpack-stream": "^6.1.2",
-    "yargs": "^17.7.2"
+    "yargs": "^17.7.3"
   },
   "bugs": {
     "url": "https://github.com/lheisey/pressed-in-thyme/issues"
