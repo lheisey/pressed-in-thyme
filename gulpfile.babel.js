@@ -14,9 +14,9 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import rename        from 'gulp-rename';
 import autoprefixer  from 'autoprefixer';
-import nodeSass from 'node-sass';
+import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
-const sass = gulpSass( nodeSass );
+const sass = gulpSass( dartSass );
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
